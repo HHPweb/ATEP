@@ -1,0 +1,127 @@
+<div class="mainCnt clearfix">
+  <h3 class="contentHeading" id="facilityLabel"></h3>
+
+  <div id="galleria"><!-- the galleria javascript loads images here --> </div>
+
+  <div id="galleryLinks">
+    <ul>
+        <li id="class">ATEP classroom and lab</li>
+        <li id="ward">Ward Sports Medicine Building ATR</li>
+        <li id="minges">Minges (Volleyball) ATR</li>
+        <li id="basketball">Basketball ATR</li>
+        <li id="murphy">Murphy Center ATR</li>
+        <li id="clark">Clark-LeClair (baseball) ATR</li>
+        <li id="olympic">Olympic Sports (soccer, softball, track) ATR</li>
+        <li><a href="http://www.ecupirates.com/facilities/ecu-facilities.html">ECU Athletic sites</a></li>
+    </ul>
+  </div>
+</div> <!-- end mainCnt -->
+
+<style>
+#galleryLinks {
+    list-style-type: none;
+    color: #592a8a;
+    line-height: 1.5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#galleria {
+  width:500px;
+  height:500px
+}
+
+#galleria img {
+  max-width: 500px;
+}
+</style>
+
+<script type="text/javascript">
+    window.onload = function() {
+    var dataInit = [{}];
+    var dataWard = [
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-1.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-2.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-3.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-4.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-5.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-6.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-7.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-8.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-9.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-10.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-11.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-12.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-13.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ward-14.jpg"},
+    ];
+    var dataClass = [
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/ATEP-lab.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/236B.jpg"},
+    ];
+    var dataMinges = [
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/minges-ATR.jpg"},
+    ];
+    var dataBasketball = [
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/basketball-1.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/basketball-2.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/basketball-3.jpg"},
+    ];
+    var dataMurphy = [
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/murphy-1.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/murphy-2.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/murphy-3.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/murphy-4.jpg"},
+    ];
+    var dataClark = [
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/clark-1.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/clark-2.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/clark-3.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/clark-4.jpg"},
+    ];
+    var dataOlympic = [
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/olympic-1.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/olympic-2.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/olympic-3.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/olympic-4.jpg"},
+        {image: "/cs-hhp/hlth/athletictr/customcf/facilities/images/olympic-5.jpg"},
+    ];
+        Galleria.loadTheme('https://core.ecu.edu/baldwinc/jquery/galleria/themes/classic/galleria.classic.min.js')
+        $("#class").click(function() {
+            gallery.load(dataClass);
+            $("#facilityLabel").html("ATEP Classroom and Lab");
+        });//end of #class.click
+
+        $("#ward").click(function() {
+            gallery.load(dataWard);
+            $("#facilityLabel").html("Ward Sports Medicine Building ATR");
+        });//end of #ward.click
+
+        $("#minges").click(function() {
+            gallery.load(dataMinges);
+            $("#facilityLabel").html("Minges (Volleyball) ATR");
+        });//end of #minges.click
+        $("#basketball").click(function() {
+            gallery.load(dataBasketball);
+            $("#facilityLabel").html("Basketball ATR");
+        });//end of #basketball.click
+        $("#murphy").click(function() {
+            gallery.load(dataMurphy);
+            $("#facilityLabel").html("Murphy Center ATR");
+        });//end of #murphy.click
+        $("#clark").click(function() {
+            gallery.load(dataClark);
+            $("#facilityLabel").html("Clark-LeClair (baseball) ATR");
+        });//end of #clark.click
+        $("#olympic").click(function() {
+            gallery.load(dataOlympic);
+            $("#facilityLabel").html("Olympic Sports (soccer, softball, track) ATR");
+        });//end of #minges.click
+//trigger initial images
+        Galleria.run('#galleria', {dataSource:dataClass,transition: 'none'});
+        var gallery = Galleria.get(0);
+        $("#facilityLabel").html("ATEP Classroom and Lab");
+
+
+    }//end of onload
+</script>

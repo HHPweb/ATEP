@@ -1,0 +1,7 @@
+#galleryLinks {
+    list-style-type: none;
+    color: #592a8a;
+    line-height: 1.5;
+    font-weight: bold;
+    cursor: pointer;
+}
